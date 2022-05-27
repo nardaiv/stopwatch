@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stopwatch</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Stopwatch">
+    <meta property="og:description" content="Sebuah stopwatch sederhana">
+    <meta property="og:image" content="https://raw.githubusercontent.com/nardaiv/stopwatch/main/src/stopwatch.png">
+    
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    
+    <div class="container d-flex justify-content-center flex-column align-items-center mt-5">
+        <h1 class="fs-1 mt-5 fw-bold text-primary">Stopwatch</h1>
+        <h2 class="fs-4 text-info">oleh narda</h2>
+        <p id="timer" class="fs-1 my-5 text-primary">00 : 00 : 00 : 000</p>
+        <div class="buttons mt-3 d-flex gap-5">
+            <button id="play"  class="btn btn-outline-info rounded-circle fs-4"  data-bs-toggle="tooltip" title="play"><i class="bi bi-play-fill"></i></button>
+            <button id="pause" class="btn btn-outline-info rounded-circle fs-4"  data-bs-toggle="tooltip" title="pause"><i class="bi bi-pause-fill"></i></button>
+            <button id="reset" class="btn btn-outline-info rounded-circle fs-4"  data-bs-toggle="tooltip" title="reset"><i class="bi bi-arrow-counterclockwise"></i></button>
+        </div>
+    </div>
+
+    <script src="./main.js"></script>
+    <!--Bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
